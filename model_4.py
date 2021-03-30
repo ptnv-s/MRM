@@ -189,7 +189,7 @@ sample_decoder_outputs = decoder(sample_x, initial_state)
 
 print("Decoder Outputs Shape: ", sample_decoder_outputs.rnn_output.shape)
 
-optimizer = tf.keras.optimizers.Adam()
+optimizer = tf.keras.optimizers.Adadelta()
 
 
 def loss_function(real, pred):
